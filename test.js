@@ -602,6 +602,7 @@ function addsprite() {
   //menu onclick
   const endgame = document.querySelector('#terminarjogo');
   endgame.onclick = function() {
+    survey.style.opacity = '0';
     transition.style.display = 'inline';
     getSoundAndFadeAudio('#startsong');
     setTimeout(() => {
