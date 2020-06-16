@@ -619,13 +619,9 @@ function addsprite() {
   fecharplacar.onclick = () => {
     win.style.opacity = '0';
     survey.style.display = 'flex';
-    transition.style.display = 'inline';
-    transition.style.backgroundColor = '#bfc4d6';
     document.querySelector('#agradecimentouser').innerHTML = `${thankyou[traduct.options[traduct.selectedIndex].value]}`;
-
     Facebookforms[traduct.options[traduct.selectedIndex].value].style.display = 'inline';
     setTimeout(() => {
-      transition.style.opacity = '1';
       win.style.display = 'none';
       survey.style.opacity = '1';
     }, 1000);
