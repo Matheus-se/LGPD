@@ -1,5 +1,3 @@
-// colocar mais perguntas, colocar ingles
-
 document.addEventListener('DOMContentLoaded', () => {
 
   const setadireita = document.createElement('div');
@@ -254,7 +252,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const mudardps = getRndInteger(0, perguntas.length - 1);
       document.querySelectorAll(".alternativa").forEach(alternativa =>{
         alternativa.onclick = () => {
-          console.log(perguntas.length)
           const mudardps = getRndInteger(0, perguntas.length - 1);
           const newrandomico2 = functeste();
           const newrandomico3 = Math.abs(newrandomico2 - 1);
@@ -622,9 +619,13 @@ function addsprite() {
   fecharplacar.onclick = () => {
     win.style.opacity = '0';
     survey.style.display = 'flex';
+    transition.style.display = 'inline';
+    transition.style.backgroundColor = '#bfc4d6';
     document.querySelector('#agradecimentouser').innerHTML = `${thankyou[traduct.options[traduct.selectedIndex].value]}`;
+
     Facebookforms[traduct.options[traduct.selectedIndex].value].style.display = 'inline';
     setTimeout(() => {
+      transition.style.opacity = '1';
       win.style.display = 'none';
       survey.style.opacity = '1';
     }, 1000);
