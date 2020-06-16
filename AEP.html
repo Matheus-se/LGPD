@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=1024">
+        <title>AEP-LGPD</title>
+    </head>
+    <body>
+        <canvas id="screen"></canvas>
+        <div id="caixa"></div>
+        <div id="botaozo"></div>
+        <div class="tela">
+            <canvas class="centro" id="mycanvas"></canvas>
+            <div id="manual">
+                <figure>
+                    <div class="position">
+                        <h1 id="tituloinfo">Manual</h1>
+                        <p id="infolgpd" class="textoinformativo">A Lei Geral de Proteção de Dados (LGPD) lida com o conceito de dados pessoais e lista as bases legais que autorizam seu uso - e o consentimento é apenas um deles - destacando a possibilidade de processamento de dados pessoais com base nos interesses legítimos do controlador de dados. adição aos princípios gerais de proteção de dados; direitos do titular dos dados - como direito de acesso, exclusão de dados e explicação; e as obrigações e limites que devem ser aplicados a qualquer entidade que processe dados pessoais. <br> Este jogo tem dois jogadores, o primeiro sprite é o CEO de alguma empresa e o segundo é o usuário. Seu objetivo neste jogo é chegar ao fim da ponte, mas o jogador um e o jogador dois precisam trabalhar juntos. O usuário e o CEO devem responder perguntas sobre a LGPD e sobre tópicos em segurança de software, para garantir que todas as suas respostas estejam corretas de acordo com a lei. Se o usuário e o CEO responderem a três perguntas erradas, o jogo termina.</p>
+                    </div>
+                    <div class="position">
+                        <p id="about">Este jogo foi feito pelo aluno do primeiro ano de engenharia de software Matheus Henrique Fernandes Santos em 2020, com a colaboração de Gustavo Oliveira, Rian Périgo e Tiago Abudi. Contato:</p>  
+                        <img src="contato.png" alt="contact">
+                    </div>
+                </figure>
+            </div>
+            <div id="start">
+                <button id="config" class="butinicial">CONFIG</button>
+                <button id="startb" class="butinicial">START</button>
+                <button id="info" class="butinicial">INFO</button>
+            </div>
+        </div>
+        <img src="FONTE.png" id="nomegame">
+        <div class="container">
+            <div class="piso" id="paralelogramop1"></div>
+            <div id="trapezio"></div>
+            <div class="piso" id="paralelogramop2"></div>
+        </div>
+        <h1 id="timerstart"></h1>
+        <h1 id="cronometro"></h1>
+        <div id="ponte1"></div>
+        <div id="ponte2"></div>
+        <div id="base"><div id="player">p1</div><div id="triangulo"></div></div>
+        <div id="vidas">
+            <div id="vida1"></div>
+            <div id="vida2"></div>
+            <div id="vida3"></div>
+        </div>
+        <div id="dimmer"></div> 
+        <div id="gameover">
+            <img src="gameover2.png" id="spriteover">
+            <div class="parag"></div>
+        </div>
+        <div id="setas"></div>
+        <div class="slidechange"></div>
+        <div id="imgcontainer">
+            <img src="" id="usuarios">
+        </div>
+        <h1 id="escolhalegenda">Chose your character</h1>
+        <h3 id="nomes">Moreno</h3>
+        <img src="trofeu.png" id="trofeu">
+        <div id="victory">
+            <div id="tempo">time</div>
+            <div id="erros">errors</div>
+            <div id="placar">score</div>
+            <button id="fecharplacar">NEXT</button>
+        </div>
+        <div id="options">
+            <img src="desmutado.png" id="volumecheck">
+            <select id="linguagens">
+                <option value=0>PT-BR</option>
+                <option value=1>EN-US</option>
+            </select> 
+        </div>  
+        <div id="avisomobile">For a better experience, please set up panoramic mode.</div>
+        <audio src="botao.wav" id="selectsound" class="somdebotao"></audio>
+        <audio src="botao hover.wav" id="botaohover" class="somdebotao"></audio>
+        <audio loop src="failsound0.mp3" id="failsound"></audio>
+        <audio loop src="startsong.mp3" id="startsong"></audio>
+        <audio src="fail.mp3" id="fail"></audio>
+        <div id="survey">
+            <div id="agradecimentouser"></div>
+            <iframe id="pesquisaen" src="https://docs.google.com/forms/d/e/1FAIpQLSd8_2CtuJPC-OUQdEpWWBjbMiVfMRHksu8Vq9AYkWR46VPkaQ/viewform?embedded=true" width="640" height="270" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            <iframe id="pesquisapt" src="https://docs.google.com/forms/d/e/1FAIpQLSddXztCrRYDznrlPJdnOpXHSU1uRKslOh2eidpjDb55lv7jCg/viewform?embedded=true" width="640" height="270" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            <button id="terminarjogo">Menu</button>
+        </div>
+        <div id="start-endscreen"></div>
+        <script src="test.js"></script>
+    </body>
+</html>
