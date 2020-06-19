@@ -660,7 +660,7 @@ function addsprite() {
       }
     }
     else {
-      for (let i = 0; i < 150; i++) {
+      for (let i = 0; i < 100; i++) {
         const x = Math.random() * canvas1.width;
         const y = Math.random() * canvas1.height;
         const radius = Math.random() * 3;
