@@ -558,7 +558,7 @@ function addsprite() {
   const win = document.querySelector('#victory');
 
   const musicastart = document.querySelector('#startsong');
-  musicastart.volume = 0.8;
+  musicastart.volume = 0.3;
 
   const canvas1 = document.querySelector('#screen');
   const c1 = canvas1.getContext('2d');
