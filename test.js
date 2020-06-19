@@ -371,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (vidas === 0) {
             alternativa1.disabled = true;
             alternativa2.disabled = true;
-            getSoundAndFadeAudio('#startsong');
+            document.querySelector('#startsong').volume = 0;
             cronometro.style.display = 'none';
             clearInterval(segundos);
             clearInterval(temporesposta);
